@@ -1,11 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import AppNav from "../components/AppNav";
+import styles from "./AppLayout.module.css";
+import SideBar from "../components/SideBar";
+import Map from "../components/Map";
 export default function AppLayout() {
   return (
-    <div>
-      <AppNav />
-      <h1>App</h1>
+    <div className={styles.app}>
+      <SideBar />
+      <Map />
     </div>
   );
 }
