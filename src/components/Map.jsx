@@ -1,34 +1,58 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import styles from "./Map.module.css";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import {
   MapContainer,
+  TileLayer,
   Marker,
   Popup,
-  TileLayer,
   useMap,
-  useMapEvent,
+  useMapEvents,
 } from "react-leaflet";
+
+import styles from "./Map.module.css";
+import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
-export default function Map() {
+import { useGeolocation } from "../hooks/useGeolocation";
+import { useUrlPosition } from "../hooks/useUrlPosition";
+import Button from "./Button";
+
+function Map() {
   const { cities } = useCities();
-
   const [mapPosition, setMapPosition] = useState([40, 0]);
+  const {
+    isLoading: isLoadingPosition,
+    position: geolocationPosition,
+    getPosition,
+  } = useGeolocation();
+  const [mapLat, mapLng] = useUrlPosition();
 
-  const [searchParams] = useSearchParams();
-  const mapLat = parseFloat(searchParams.get("lat")) || 40;
-  const mapLng = parseFloat(searchParams.get("lng")) || 0;
+  useEffect(
+    function () {
+      if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
+    },
+    [mapLat, mapLng]
+  );
 
-  useEffect(() => {
-    if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
-  }, [mapLat, mapLng]);
+  useEffect(
+    function () {
+      if (geolocationPosition)
+        setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+    },
+    [geolocationPosition]
+  );
+
   return (
     <div className={styles.mapContainer}>
+      {!geolocationPosition && (
+        <Button type="position" onClick={getPosition}>
+          {isLoadingPosition ? "Loading..." : "Use your position"}
+        </Button>
+      )}
+
       <MapContainer
-        center={[mapLat, mapLng]}
-        zoom={5}
+        center={mapPosition}
+        zoom={6}
         scrollWheelZoom={true}
         className={styles.map}
       >
@@ -54,17 +78,18 @@ export default function Map() {
   );
 }
 
-const ChangeCenter = ({ position }) => {
+function ChangeCenter({ position }) {
   const map = useMap();
   map.setView(position);
   return null;
-};
+}
 
-const DetectClick = () => {
+function DetectClick() {
   const navigate = useNavigate();
-  useMapEvent({
-    click: (e) => {
-      navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
-    },
+
+  useMapEvents({
+    click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
   });
-};
+}
+
+export default Map;

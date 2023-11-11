@@ -1,40 +1,64 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
-      "cityName": "Madrid",
+      "cityName": "Alcoba",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2023-11-11T20:29:20.965Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "39.2492708462234",
+        "lng": "-4.416503906250001"
       },
-      "id": 17806751
+      "id": 1
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "cityName": "Manacor",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-11T20:29:35.904Z",
+      "notes": "",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "39.58875727696545",
+        "lng": "3.1860351562500004"
       },
-      "id": 98443197
+      "id": 2
+    },
+    {
+      "cityName": "Strait of Bonifacio",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2023-11-11T20:29:41.399Z",
+      "notes": "",
+      "position": {
+        "lat": "41.261291493919884",
+        "lng": "9.140625000000002"
+      },
+      "id": 3
+    },
+    {
+      "cityName": "Karpenisi",
+      "country": "Greece",
+      "emoji": "🇬🇷",
+      "date": "2023-11-11T20:29:48.270Z",
+      "notes": "",
+      "position": {
+        "lat": "38.77121637244273",
+        "lng": "21.774902343750004"
+      },
+      "id": 4
+    },
+    {
+      "cityName": "Tetri Tsqaro",
+      "country": "Georgia",
+      "emoji": "🇬🇪",
+      "date": "2023-11-11T20:30:34.914Z",
+      "notes": "",
+      "position": {
+        "lat": "41.59079685105603",
+        "lng": "44.62646484375001"
+      },
+      "id": 5
     }
   ]
 }
