@@ -1,30 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Tbilisi",
-      "country": "Georgia",
-      "emoji": "🇬🇪",
-      "date": "2023-11-12T08:15:56.373Z",
-      "notes": "",
-      "position": {
-        "lat": "41.691373270757275",
-        "lng": "44.81597900390626"
-      },
-      "id": 1
-    },
-    {
-      "cityName": "Meranges",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-11-12T08:19:52.347Z",
-      "notes": "",
-      "position": {
-        "lat": "42.45588764197166",
-        "lng": "1.7358398437500002"
-      },
-      "id": 2
-    },
-    {
       "cityName": "Deltebre",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -35,6 +11,18 @@
         "lng": "0.6811523437500001"
       },
       "id": 3
+    },
+    {
+      "cityName": "Villarta de los Montes",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-12T14:42:06.811Z",
+      "notes": "",
+      "position": {
+        "lat": "39.2492708462234",
+        "lng": "-4.746093750000001"
+      },
+      "id": 4
     }
   ]
 }
