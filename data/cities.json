@@ -1,64 +1,40 @@
 {
   "cities": [
     {
-      "cityName": "Alcoba",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-11-11T20:29:20.965Z",
+      "cityName": "Tbilisi",
+      "country": "Georgia",
+      "emoji": "🇬🇪",
+      "date": "2023-11-12T08:15:56.373Z",
       "notes": "",
       "position": {
-        "lat": "39.2492708462234",
-        "lng": "-4.416503906250001"
+        "lat": "41.691373270757275",
+        "lng": "44.81597900390626"
       },
       "id": 1
     },
     {
-      "cityName": "Manacor",
+      "cityName": "Meranges",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2023-11-11T20:29:35.904Z",
+      "date": "2023-11-12T08:19:52.347Z",
       "notes": "",
       "position": {
-        "lat": "39.58875727696545",
-        "lng": "3.1860351562500004"
+        "lat": "42.45588764197166",
+        "lng": "1.7358398437500002"
       },
       "id": 2
     },
     {
-      "cityName": "Strait of Bonifacio",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2023-11-11T20:29:41.399Z",
+      "cityName": "Deltebre",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-12T08:56:51.691Z",
       "notes": "",
       "position": {
-        "lat": "41.261291493919884",
-        "lng": "9.140625000000002"
+        "lat": "40.74725696280421",
+        "lng": "0.6811523437500001"
       },
       "id": 3
-    },
-    {
-      "cityName": "Karpenisi",
-      "country": "Greece",
-      "emoji": "🇬🇷",
-      "date": "2023-11-11T20:29:48.270Z",
-      "notes": "",
-      "position": {
-        "lat": "38.77121637244273",
-        "lng": "21.774902343750004"
-      },
-      "id": 4
-    },
-    {
-      "cityName": "Tetri Tsqaro",
-      "country": "Georgia",
-      "emoji": "🇬🇪",
-      "date": "2023-11-11T20:30:34.914Z",
-      "notes": "",
-      "position": {
-        "lat": "41.59079685105603",
-        "lng": "44.62646484375001"
-      },
-      "id": 5
     }
   ]
 }
